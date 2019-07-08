@@ -1,5 +1,3 @@
-
- 
 def sequence(st): 
     n = len(st) 
     m= 1
@@ -24,7 +22,7 @@ def sequence(st):
          
             hasharr[ord(st[i])] = i
         else:
-            return 0
+            return -1
   
     
         if m > distlen: 
@@ -34,4 +32,10 @@ def sequence(st):
   
 
 st=input()
-print(sequence(st))
+a=sequence(st)
+if a==-1:
+    print("Invalid Characters ")
+else:
+    print(a)
+    
+
